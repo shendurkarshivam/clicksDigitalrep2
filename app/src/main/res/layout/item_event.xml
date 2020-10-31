@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginStart="@dimen/margine_sub"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="@dimen/margine_sub"
+    android:layout_marginBottom="10dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:id="@+id/card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pale_grey"
+        android:orientation="horizontal"
+        android:padding="@dimen/margine_sub">
+
+        <ImageView
+            android:id="@+id/event_image"
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="top"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/residential" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margine_sub"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/event_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:capitalize="characters"
+                android:fontFamily="@font/lato"
+                android:gravity="start|top"
+                android:maxLines="2"
+                android:text="WORKSHOP TO BECOME AN INFLUENCER"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title3"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/hor_line"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="#092859" />
+
+            <TextView
+                android:id="@+id/time_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="date and time and time duration"
+                android:textColor="@color/recevierMessage"
+                android:textSize="6sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/eventDetailsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:maxLines="3"
+                    android:text="Event Details : "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title4"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/eventDetails"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:capitalize="sentences"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/lato"
+                        android:maxLines="3"
+                        android:text="The text you're putting in the TextView is short, it will not automatically expand to four lines. If you want the TextView to always have four lines regardless of the length of the text in it, set the android:lines attribute:"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/title4" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/venueTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Venue : "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title4"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/venue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:maxLines="2"
+                    android:text="Foodcourt, Phonix Mall, Nagar Road, Pune"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/organisertxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Organiser : "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title4"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/organiser_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="name of organiser"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Event Type : "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title4"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/event_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="Free"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title4"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bookBtn"
+        android:layout_width="59dp"
+        android:layout_height="18dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/margine_sub"
+        android:layout_marginBottom="@dimen/margine_sub"
+        android:background="@drawable/cb_rectangle_round"
+        android:backgroundTint="#092859"
+        android:gravity="center"
+        android:text="Book Now"
+        android:textColor="@color/white"
+        android:textSize="8sp" />
+
+    <Button
+        android:id="@+id/editBtn"
+        android:layout_width="59dp"
+        android:layout_height="18dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/margine_sub"
+        android:layout_marginBottom="@dimen/margine_sub"
+        android:background="@drawable/cb_rectangle_round"
+        android:backgroundTint="#092859"
+        android:gravity="center"
+        android:text="Edit"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:visibility="gone" />
+
+</androidx.cardview.widget.CardView>
+
+<!--edit now button lagana hai -->
